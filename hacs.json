@@ -1,0 +1,7 @@
+{
+    "name": "TaiPower Power Info",
+    "render_readme": true,
+    "domain": "taipower_powerinfo",
+    "documentation": "https://github.com/tsunglung/TaiPowerPowerInfo",
+    "issue_tracker": "https://github.com/tsunglung/TaiPowerPowerInfo/issues"
+}

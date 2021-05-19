@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u670d\u52d9\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557",
+            "unknown": "\u672a\u9810\u671f\u932f\u8aa4"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "\u96fb\u529b\u8cc7\u8a0a"
+                },
+                "description": "\u8acb\u9078\u64c7\u96fb\u529b\u8cc7\u8a0a",
+                "title": "\u9023\u7dda\u81f3 \u53f0\u96fb\u96fb\u529b\u8cc7\u8a0a\u7db2\u7ad9"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "name": "\u96FB\u529B\u8CC7\u8A0A"
+                }
+            }
+        }
+    }
+}
