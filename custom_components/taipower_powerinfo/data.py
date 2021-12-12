@@ -2,15 +2,10 @@
 import logging
 import json
 from json import JSONDecodeError
+from http import HTTPStatus
 
 from aiohttp.hdrs import USER_AGENT
 import requests
-
-from homeassistant.const import (
-    HTTP_OK,
-    HTTP_FORBIDDEN,
-    HTTP_NOT_FOUND,
-)
 
 from .const import (
     POWER_INFOS,
@@ -56,7 +51,6 @@ class PowerInfoData:
 
     def _parser_json(self, power_info, text):
         """ parser json """
-        _LOGGER.error(text)
         try:
             the_dict = json.loads(text)
         except JSONDecodeError:
@@ -98,7 +92,7 @@ class PowerInfoData:
             except requests.exceptions.RequestException as err:
                 _LOGGER.error("Failed fetching data for %s", POWER_INFOS[i])
 
-            if req and req.status_code == HTTP_OK:
+            if req and req.status_code == HTTPStatus.OK:
                 value = self._parser_json(i, req.text)
                 if value:
                     self.data.append(value)

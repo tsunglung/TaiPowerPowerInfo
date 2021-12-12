@@ -1,8 +1,8 @@
 {
   "domain": "taipower_powerinfo",
   "name": "TaiPower Power Info \u96fb\u529b\u8cc7\u8a0a",
-  "documentation": "https://github.com/tsunglung/TaiPower_Info",
-  "issue_tracker": "https://github.com/tsunglung/TaiPower_Info/issues",
+  "documentation": "https://github.com/tsunglung/TaiPowerPowerInfo",
+  "issue_tracker": "https://github.com/tsunglung/TaiPowerPowerInfo/issues",
   "version": "1.0.0",
   "requirements": ["requests"],
   "codeowners": ["@tsunglung"],
