@@ -18,7 +18,6 @@ from .const import (
     ATTR_PEAK_INDICATOR,
     INFO_WRAPPER,
     BASE_URL,
-    HA_USER_AGENT,
     REQUEST_TIMEOUT
 )
 
@@ -78,7 +77,6 @@ class PowerInfoData:
 
     def _update_infos(self):
         """Return the power info json."""
-        headers = {USER_AGENT: HA_USER_AGENT}
 
         for i in self.power_infos:
             self.uri = BASE_URL.format(INFO_WRAPPER[i])
@@ -86,7 +84,6 @@ class PowerInfoData:
             try:
                 req = requests.get(
                     self.uri,
-                    headers=headers,
                     timeout=REQUEST_TIMEOUT)
 
             except requests.exceptions.RequestException as err:
